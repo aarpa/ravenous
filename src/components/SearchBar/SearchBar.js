@@ -21,7 +21,6 @@ class SearchBar extends React.Component {
     };
   }
 
-  // This method returns the current CSS class for a sorting option -- helpful for providing visual feedback to user to indicate selection.
   getSortByClass(sortByOption) {
     if (this.state.sortBy === sortByOption) {
       return 'active';
@@ -29,7 +28,6 @@ class SearchBar extends React.Component {
     return '';
   }
 
-  // This methods sets the state of a sorting option -- helpful for communicating with the Yelp API.
   handleSortByChange(sortByOption) {
     this.setState({sortBy: sortByOption});
   }

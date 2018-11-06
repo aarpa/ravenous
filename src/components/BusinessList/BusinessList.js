@@ -8,7 +8,7 @@ class BusinessList extends React.Component {
       <div className="BusinessList">
         {
           this.props.businesses.map(business => {
-            return <Business business={business}/>; // Creates a <Business/> component, and adds a 'business' prop, and sets value to parameter of callback function
+            return <Business business={business} key={business.id}/>;
           })
         }
       </div>
